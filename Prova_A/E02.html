@@ -7,11 +7,18 @@
     //AQUI, USE FOR...OF!
 
     //Entrada
-
+    let listaNumeros = [1, 3, 5, 7, 9, 2, 11];
+    let par =0;
 
     //Processamento
+    for (let numero of listaNumeros) {
+        if (numero%2 === 0) {
+            par = numero
+        }
+    }
 
 
     //Saída
+    document.write(`O unico numero par é ${par}.`);
 
 </script>

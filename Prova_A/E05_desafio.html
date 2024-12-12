@@ -8,11 +8,32 @@
     //AQUI, USE QUALQUER ESTRUTURA DE REPEETIÇÃO QUE DESEJAR!
 
     //Entrada
+    let lista = ['arara', 'para', 'radar', 'tomate', 'osso', 'ana', 'casa', 'ovo'];
+    let listaFinal = [];
+    let listaPalavra = [];
+    let final = 0;
+    let listaNova = [];
+
 
 
     //Processamento
+    for (let palavra of lista) {
+        listaPalavra = Array.from(palavra);
+        for (let contador = 0; contador < listaPalavra.length; contador++) {
+            if (listaPalavra[contador] === listaPalavra[listaPalavra.length - (contador + 1)]) {
+                listaNova.push(palavra);
+
+            }
+        }
+        for (let palavra of listaNova) {
+            if (listaFinal.includes(palavra) === false) {
+                listaFinal.push(palavra)
+            }
+        }
+    }
 
 
     //Saída
+    document.write(`${listaFinal.join(" - ")}`);
 
 </script>

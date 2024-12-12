@@ -9,11 +9,17 @@
     //AQUI, USE FOR...OF!
 
     //Entrada
+    const numero = Number(prompt(`informe um numero positivo:`));
+    let lista = [];
 
 
     //Processamento
+    for (let contador = 1; contador <= numero; contador++) {
+        lista.push(contador);
+    }
 
 
     //Saída
+    document.write(`${lista.join(" ")}`)
 
 </script>

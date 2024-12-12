@@ -17,9 +17,19 @@
     //AQUI, USE FOR COM VARIÁVEL DE CONTROLE!!!
 
     //Entrada
+    const numero = Number(prompt(`informe um numero positivo:`));
+    let lista1 = [];
 
 
     //Processamento
+    for (let contador = 1; contador <= numero; contador++){
+        lista1.push(contador);
+        document.write(`${lista1.join("")}<br>`);
+    }
+    for(let contador2 = 0; contador2 < numero; contador2++){
+        lista1.pop(lista1.length);
+        document.write(`${lista1.join("")} <br>`);
+    }
 
 
     //Saída

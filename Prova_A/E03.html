@@ -7,11 +7,20 @@
     //AQUI, USE FOR COM VARIÁVEL DE CONTROLE!!!
 
     //Entrada
-
+    const numero = Number(prompt(`informe um numero positivo:`));
+    let lista = [];
+    let conta = 0;
 
     //Processamento
+    for (let contador = 1; contador <= numero; contador++){
+        conta = contador/3;
+       if (Math.ceil(conta) === conta) {
+        lista.push(contador);
+       }
+    }
 
 
     //Saída
+    document.write(`Todos os multiplos de 3 entre 1 e ${numero} são: ${lista}`)
 
 </script>
